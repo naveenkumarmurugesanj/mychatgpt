@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Chat container covers full screen */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #f7f7f8;
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+}
+
+/* Chat messages box */
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background: #e5e5e5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* User message styling */
+.user-msg {
+  align-self: flex-end;
+  background: #2563eb;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 15px 15px 0 15px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+/* Bot message styling */
+.bot-msg {
+  align-self: flex-start;
+  background: #f1f1f1;
+  color: #333;
+  padding: 0.6rem 1rem;
+  border-radius: 15px 15px 15px 0;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+/* Chat input form */
+.chat-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+}
+
+.chat-input button {
+  padding: 0.8rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chat-input button:hover {
+  background-color: #1d4ed8;
+}
