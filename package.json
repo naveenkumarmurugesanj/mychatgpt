@@ -1,0 +1,29 @@
+{
+  "name": "mychatgpt",
+  "version": "1.0.0",
+  "description": "my chat gpt",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naveenkumarmurugesanj/mychatgpt.git"
+  },
+  "author": "NaveenKumar M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naveenkumarmurugesanj/mychatgpt/issues"
+  },
+  "homepage": "https://github.com/naveenkumarmurugesanj/mychatgpt#readme",
+  "dependencies": {
+    "@google/genai": "^1.32.0",
+    "@google/generative-ai": "^0.24.1",
+    "body-parser": "^2.2.1",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "nodeman": "^1.1.2",
+    "nodemon": "^3.1.11"
+  }
+}
